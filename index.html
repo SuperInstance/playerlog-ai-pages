@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playerlog.ai — Fleet Agent</title>
+    <title>Playerlog.ai — Gaming Insights</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: system-ui, sans-serif; background: #0a1628; color: #e2e8f0; min-height: 100vh; }
+        body { font-family: system-ui, sans-serif; background: #0a0a14; color: #e2e8f0; min-height: 100vh; }
         .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header { text-align: center; padding: 3rem 0; border-bottom: 2px solid #1e3a5f; }
-        h1 { font-size: 2.5rem; color: #Gaming insights:f97316; margin-bottom: 0.5rem; }
+        header { text-align: center; padding: 3rem 0; border-bottom: 2px solid #2a1a0a; }
+        h1 { font-size: 2.5rem; color: #f97316; margin-bottom: 0.5rem; }
         .subtitle { color: #94a3b8; font-size: 1.1rem; }
-        .fleet-badge { display: inline-block; background: #1e3a5f; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; color: #Gaming insights:f97316; margin-top: 1rem; }
+        .fleet-badge { display: inline-block; background: #2a1a0a; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; color: #f97316; margin-top: 1rem; }
         .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
-        .status-card { background: #0f2744; border: 1px solid #1e4d7b; border-radius: 12px; padding: 1.5rem; }
-        .status-card h3 { color: #Gaming insights:f97316; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .status-card { background: #1a1428; border: 1px solid #4a2a1a; border-radius: 12px; padding: 1.5rem; }
+        .status-card h3 { color: #f97316; font-size: 0.9rem; margin-bottom: 0.5rem; }
         .status-card .value { font-size: 1.5rem; font-weight: bold; color: #fff; }
         .status-card .sub { font-size: 0.75rem; color: #64748b; }
-        .plato-status { background: #1a2744; border: 1px solid #2d4a6f; border-radius: 8px; padding: 1rem; margin: 2rem 0; text-align: center; }
+        .features { margin: 2rem 0; }
+        .features h2 { color: #f97316; margin-bottom: 1rem; }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .feature { background: #1a1428; border-radius: 8px; padding: 1rem; }
+        .feature h4 { color: #fff; margin-bottom: 0.3rem; }
+        .feature p { color: #94a3b8; font-size: 0.85rem; }
+        .plato-status { background: #1a1428; border: 1px solid #4a2a1a; border-radius: 8px; padding: 1rem; margin: 2rem 0; text-align: center; }
         .plato-status .label { font-size: 0.75rem; color: #64748b; }
         .plato-status .value { color: #22c55e; font-size: 1.1rem; font-weight: bold; }
-        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.8rem; border-top: 1px solid #1e3a5f; margin-top: 2rem; }
-        a { color: #Gaming insights:f97316; }
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.8rem; border-top: 1px solid #2a1a0a; margin-top: 2rem; }
+        a { color: #f97316; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>⚡ Playerlog.ai</h1>
-            <p class="subtitle">Fleet Agent — playerlog domain</p>
+            <h1>🎮 Playerlog.ai</h1>
+            <p class="subtitle">Gaming Insights Across the Fleet</p>
             <span class="fleet-badge">⚡ SuperInstance Fleet Agent</span>
         </header>
         <div class="status-grid">
-            <div class="status-card"><h3>Active Sessions</h3><div class="value">12</div><div class="sub">Fleet-wide</div></div>
-            <div class="status-card"><h3>Total Entries</h3><div class="value">847</div><div class="sub">This week</div></div>
-            <div class="status-card"><h3>Connections</h3><div class="value">23</div><div class="sub">Agents</div></div>
+            <div class="status-card">
+                <h3>Active Games</h3>
+                <div class="value">24</div>
+                <div class="sub">Sessions tracked</div>
+            </div>
+            <div class="status-card">
+                <h3>Game Insights</h3>
+                <div class="value">1,847</div>
+                <div class="sub">Analyzed</div>
+            </div>
+            <div class="status-card">
+                <h3>Connections</h3>
+                <div class="value">11</div>
+                <div class="sub">Fleet agents</div>
+            </div>
+        </div>
+        <div class="features">
+            <h2>Capabilities</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h4>🎯 Strategy Mapping</h4>
+                    <p>Map game strategies and decision patterns</p>
+                </div>
+                <div class="feature">
+                    <h4>🏆 Leaderboards</h4>
+                    <p>Track fleet performance in game challenges</p>
+                </div>
+                <div class="feature">
+                    <h4>🧠 Skill Analysis</h4>
+                    <p>Analyze gaming skills and improvement areas</p>
+                </div>
+                <div class="feature">
+                    <h4>⚔️ Tournament Ops</h4>
+                    <p>Coordinate fleet gaming tournaments and events</p>
+                </div>
+            </div>
         </div>
         <div class="plato-status">
             <div class="label">PLATO CONNECTION</div>
@@ -42,7 +81,7 @@
         </div>
         <footer>
             <p>Playerlog.ai — Part of the SuperInstance Fleet</p>
-            <p>PLATO Room: <code>playerlog-ai</code> · Agent: playerlog-agent</p>
+            <p>PLATO Room: <code>playerlog</code> · Agent: playerlog-agent</p>
         </footer>
     </div>
 </body>
