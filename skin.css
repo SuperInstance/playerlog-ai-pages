@@ -1,0 +1,68 @@
+/* playerlog.ai — neon arcade: near-black, magenta + cyan, scanlines. */
+.le-root {
+  --le-bg: #07060e;
+  --le-ink: #eef6ff;
+  --le-muted: #7c86a8;
+  --le-accent: #ff2fb3;
+  --le-card: #0d0b1c;
+  --le-line: #2a2547;
+  --le-go: #2fe8c7;
+  --le-hold: #ffd23f;
+  --le-nogo: #ff4d6d;
+  --le-font: "Trebuchet MS", Verdana, Geneva, sans-serif;
+  --le-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+.le-root::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0 1px, transparent 1px 3px);
+  z-index: 50;
+}
+
+.le-wordmark {
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: lowercase;
+  color: var(--le-ink);
+  text-shadow: 0 0 10px rgba(255,47,179,.65), 0 0 32px rgba(255,47,179,.3);
+}
+
+.le-verdict-value {
+  text-shadow: 0 0 14px currentColor;
+}
+
+.le-btn {
+  background: var(--le-accent);
+  color: #0a0812;
+  font-weight: 800;
+  border: 0;
+  box-shadow: 0 0 16px rgba(255,47,179,.5);
+}
+.le-btn:hover { box-shadow: 0 0 26px rgba(255,47,179,.8); }
+
+.le-banner {
+  background: linear-gradient(90deg, #ff2fb3, #2fe8c7);
+  color: #0a0812;
+}
+
+/* last-5 recap */
+.sk-player-recap {
+  background: var(--le-card);
+  border: 1px solid var(--le-line);
+  border-radius: .8rem;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 0 24px rgba(255,47,179,.12), inset 0 0 30px rgba(47,232,199,.04);
+}
+.sk-player-table { width: 100%; border-collapse: collapse; margin: .7rem 0 .4rem; font-size: .88rem; }
+.sk-player-table th { text-align: left; font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--le-muted); padding: .4rem .5rem;
+  border-bottom: 1px solid var(--le-line); }
+.sk-player-table td { padding: .55rem .5rem; border-bottom: 1px solid rgba(42,37,71,.6); }
+.sk-player-table tr:last-child td { border-bottom: 0; }
+.sk-player-decided { color: #2fe8c7; font-family: var(--le-mono); font-size: .82rem; }
+.sk-v-GO    { color: var(--le-go); font-weight: 800; }
+.sk-v-HOLD  { color: var(--le-hold); font-weight: 800; }
+.sk-v-NOGO  { color: var(--le-nogo); font-weight: 800; }
+.sk-player-foot { margin: .8rem 0 0; font-size: .88rem; color: var(--le-muted); font-style: italic; }
